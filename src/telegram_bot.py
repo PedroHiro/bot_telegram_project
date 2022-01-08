@@ -15,6 +15,7 @@ class telegramBot:
         self.driveBot = driveBot()
 
     def start(self):
+        print("Inicializando bot...")
         update_id = None
         while True:
             update = self.get_message(update_id)
