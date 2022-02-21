@@ -40,6 +40,7 @@ class telegramBot:
         return json.loads(result.content)
 
     def create_answer(self, message_text):
+        print('I am inside...')
         dataframe = transform_data(self.driveBot.get_data())
         if message_text in ['/start', 'ola', 'eae', 'menu', 'oi', 'oie']:
             return ''' Ola, tudo bem? Seja bem vindo ao Bot do RH da Empresa RDS. Selecione o que deseja: \n
